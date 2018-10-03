@@ -1,8 +1,7 @@
 applications:
-- name: tracker-allocations
+- name: tracker-allocations-1
   path: ./applications/allocations-server/build/libs/allocations-server.jar
-  routes:
-  - route: allocations-pal-{UNIQUE_IDENTIFIER}.apps.chicken.pal.pivotal.io
+  random-route: true
   memory: 1G
   instances: 1
   env:
