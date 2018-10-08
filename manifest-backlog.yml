@@ -4,7 +4,6 @@ applications:
   random-route: true
   memory: 1G
   instances: 1
-  env:
-    REGISTRATION_SERVER_ENDPOINT: http://FILL_ME_IN
   services:
   - tracker-backlog-database
+  - tracker-service-registry
